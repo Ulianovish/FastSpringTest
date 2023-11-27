@@ -42,7 +42,7 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/ulianovish/fastpizza.git
+   git clone https://github.com/ulianovish/FastSpringTest.git
    ```
 
 2. **Navigate to the Backend Directory:**
