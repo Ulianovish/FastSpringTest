@@ -55,7 +55,7 @@
 4. **Navigate to the Backend Directory:**
    ```bash
    mvn clean install
-mvn spring-boot:run
+   mvn spring-boot:run
    ```
    - This will build and start the backend server at http://localhost:8081.
 5. **Access Swagger for API Documentation:**
