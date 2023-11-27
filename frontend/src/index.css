@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+:root {
+  --primary: #f49001;
+  --secondary: #ffd9a3;
+  --danger: rgb(241, 70, 70);
+  --success: rgb(32, 233, 32);
+  --text-gary: rgb(136, 135, 135);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f09312;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f0971b;
+}
+.search .all-products {
+  height: auto !important;
+}
+.search .all-products .product-card {
+  margin: 30px;
+}
