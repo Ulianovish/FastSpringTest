@@ -1,11 +1,11 @@
 package com.fastpizza.domain.DTO;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class PizzaDTO {
     private Long id;

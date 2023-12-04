@@ -50,12 +50,7 @@ public class JwtTokenProvider {
         if(token == null){
             return null;
         }
-//        Claims claims = Jwts.parser().setSigningKey(jwtSecret).build().parseClaimsJws(token).getBody();
-//        SecretKey secret = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret));
-//        SecretKey key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
-//        SecretKey key = Keys.secretKeyFor(SignatureAlgorithm.HS512);
         SecretKey key = Keys.hmacShaKeyFor(jwtSecret.getBytes());
-//        Claims claims = Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload();
 
         Claims claims = Jwts.parser().setSigningKey(key).build().parseClaimsJws(token).getBody();
         String username = claims.getSubject();
@@ -71,7 +66,7 @@ public class JwtTokenProvider {
         if(token == null){
             return false;
         }
-//        Claims claims = Jwts.parser().setSigningKey(jwtSecret).build().parseClaimsJws(token).getBody();
+        
         SecretKey key = Keys.hmacShaKeyFor(jwtSecret.getBytes());
         Claims claims = Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload();
         if(claims.getExpiration().before(new Date())){

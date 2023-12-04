@@ -60,6 +60,13 @@ mvn spring-boot:run
    - This will build and start the backend server at http://localhost:8081.
 5. **Access Swagger for API Documentation:**
    - Open [Swagger UI](http://localhost:8081/swagger-ui/index.html) to explore and test the API.
+6. **Run Test:**
+   ```bash
+   cd fastpizza/backend
+   mvn clean test
+   mvn jacoco:report
+   ```
+   - You se the report in the path `FastSpring/backend/target/site/jacoco/index.html`
 
 ## Frontend Setup
 
